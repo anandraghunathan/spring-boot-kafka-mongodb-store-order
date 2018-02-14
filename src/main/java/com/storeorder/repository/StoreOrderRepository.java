@@ -1,4 +1,4 @@
-package com.storeorder;
+package com.storeorder.repository;
 
 import com.storeorder.bean.StoreOrderBean;
 import org.springframework.data.mongodb.repository.MongoRepository;
