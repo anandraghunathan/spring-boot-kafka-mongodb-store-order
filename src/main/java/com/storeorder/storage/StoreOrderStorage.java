@@ -39,6 +39,6 @@ public class StoreOrderStorage {
         log.info("Document: "+doc);
         log.info("Mongo DB: "+mongoTemplate.getDb());
         mongoTemplate.insert(doc, "orderdetails");
-
+        
     }
 }

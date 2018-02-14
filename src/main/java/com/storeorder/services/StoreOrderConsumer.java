@@ -17,6 +17,8 @@ public class StoreOrderConsumer {
     @KafkaListener(topics="${store.order.topic}")
     public void processOrder(String order) {
         log.info("Received order info = '{}'", order);
-        storeOrderStorage.put(order);
+        // store entry into the mongodb
+        System.out.println("Persisting data into mongodb will proceed now...");
+        storeOrderStorage.insertToDb(order);
     }
 }

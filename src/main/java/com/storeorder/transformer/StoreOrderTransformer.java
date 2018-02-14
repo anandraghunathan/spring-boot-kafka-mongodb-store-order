@@ -13,7 +13,6 @@ public class StoreOrderTransformer {
     public static int PRETTY_PRINT_INDENT_FACTOR = 4;
 
     public String transform(String jsonOrder) throws JSONException {
-        log.info("Transform method");
         JSONObject xmlJSONObj = XML.toJSONObject(jsonOrder);
         String jsonPrettyPrintString = xmlJSONObj.toString(PRETTY_PRINT_INDENT_FACTOR);
         System.out.println("JSON STRING : " + jsonPrettyPrintString);

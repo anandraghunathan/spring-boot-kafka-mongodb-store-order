@@ -43,10 +43,6 @@ public class StoreOrderWebRestController {
 		// send order info
 		storeOrderProducer.send(jsonOrder);
 
-		// store entry into the mongodb
-		System.out.println("Persisting data into mongodb will proceed now...");
-		storeOrderStorage.insertToDb(jsonOrder);
-
 		return "Order information sent to the Kafka Topic store_order_topic Successfully";
 	}
 
