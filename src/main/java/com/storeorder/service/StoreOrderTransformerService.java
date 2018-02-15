@@ -1,4 +1,4 @@
-package com.storeorder.transformer;
+package com.storeorder.service;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -8,8 +8,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 @Service
-public class StoreOrderTransformer {
-    private static final Logger log = LoggerFactory.getLogger(StoreOrderTransformer.class);
+public class StoreOrderTransformerService {
+    private static final Logger log = LoggerFactory.getLogger(StoreOrderTransformerService.class);
     public static int PRETTY_PRINT_INDENT_FACTOR = 4;
 
     public String transform(String jsonOrder) throws JSONException {
